@@ -1,0 +1,843 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 974px;
+    margin: 0 auto;
+}
+/*===================Navbar css part goes here==========================*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(16, 22, 54,.20)
+}
+.menu-main{
+    display: flex;
+}
+.logo{
+    width: 200px;
+    padding-top: 19px;
+
+}
+.logo a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20.28px;
+    color: #ffffff;
+}
+.logo span{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20.28px;
+    color: #4c76ff;
+    margin-left: -3px;
+}
+.menu{
+    width: 774px;
+    text-align: right;
+}
+.menu ul li{
+    display: inline-block;
+    padding-left: 33px;
+}
+.menu ul li a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 52px;
+    text-transform: capitalize;
+    position: relative;
+}
+/*==================================after border need to crection*/
+.menu ul li a::after{
+    position: absolute;
+    content: '';
+    width: ;
+    height: 1px;
+    background-color: #4c76ff;
+    top: -15px;
+    left: 0;
+    opacity: 0;
+    transition: all linear .5s;
+}
+.menu ul li a:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+
+/*===================Navbar css part end here==========================*/
+/*===================banner css part goes here==========================*/
+.banner-img{
+    position: relative;
+}
+.banner-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0,.61);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.banner-text{
+padding-top: 279px;
+text-align: center;
+}
+.banner-text h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 62px;
+    color: #ffffff;
+}
+.banner-text span{
+    color: #4c76ff;
+    margin-left: -13px;
+}
+.banner-text h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 48px;
+    color: #ffffff;
+    margin-top: -1px;
+}
+.banner-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 17px;
+    position: relative;
+}
+.banner-text p::after{
+    position: absolute;
+    content: '';
+    left: 306px;
+    top: 73%;
+    background-color: #4c76ff;
+    width: 28px;
+    height: 1px;
+}
+.banner-text p::before{
+    position: absolute;
+    content: '';
+    right: 306px;
+    top: 75%;
+    background-color: #4c76ff;
+    width: 28px;
+    height: 1px;
+}
+.banner-icon{
+    text-align: center;
+    padding-top: 110px;
+}
+.banner-icon i {
+    color: #818283;
+    font-size: 18px;
+    margin-left: 13px;
+    transition: all linear .5s;
+}
+.banner-icon i:hover{
+    color: #ffffff;
+}
+/*===================banner css part end here==========================*/
+/*===================Features css part goes here==========================*/
+#Features{
+    padding-top: 71px;
+    padding-bottom: 100px;
+    background-color: #efefef;
+}
+.head{
+    text-align: center;
+}
+.head h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #4c76ff;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+.head i{
+    color: #c9c9c9;
+    width: 18px;
+    height: 14px;
+
+}
+.head span{
+    position: relative;
+}
+.head span::before{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    top: 60%;
+    right: 178%;
+    background: #c9c9c9;
+}
+.head span::after{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    top: 60%;
+    left: 178%;
+    background: #c9c9c9;
+}
+.f-main{
+    display: flex;
+    justify-content: space-between;
+}
+.f-item{
+    display: flex; 
+    width: 301px;
+    padding-top: 78px;
+}
+.ff-icon{
+    padding-right: 12px;
+}
+.f-icon{
+    border: 1px solid #4c76ff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+    line-height: 35px;  
+}
+.f-icon i{
+    width: 10px;
+    height: 17px;
+    color: #4c76ff;
+}
+.f-text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16.78px;
+    color: #062033;
+    padding-bottom: 13px;
+}
+.f-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.91px;
+    color: #062033;
+    line-height: 17.62px;
+}
+/*===================Features css part end here==========================*/
+/*===================design css part goes here==========================*/
+#design{
+    padding-top: 87px;
+    padding-bottom: 135px;
+}
+.design-head p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15.8px;
+    color: #282528;
+    line-height: 30.15px;
+    text-align: center;
+}
+.design-main{
+    display: flex;
+    justify-content: space-between;
+}
+.design-left{
+    padding-top: 95px;
+}
+.design-right{
+    padding-top: 95px;
+}
+.design-item{
+    width: 311px;
+    padding-top: 28.25px;
+    padding-bottom: 28.25px;
+    display: flex;
+    transition: all linear .5s;
+}
+.design-item:hover{
+    background-color: rgba(247, 227, 39,.10);
+}
+.design-icon{
+    width: 60px;
+    text-align: center;
+}
+.design-icon i{
+    text-align: center;
+    color: #c2c1c2;
+    font-size: 30px;
+}
+.design-text{
+    width: 241px;
+    text-align: left;
+    padding-left: 6px;
+
+}
+.design-text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13.4px;
+    color: #282528;
+    padding-bottom: 9px;
+}
+.design-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.89px;
+    color: #282528;
+    line-height: 20.1px;
+}
+.design-mid{
+    width: 268px;
+    padding-top: 64px;
+}
+/*===================design css part end here==========================*/
+/*===================works css part goes here==========================*/
+#work{
+    padding-bottom: 100px;
+}
+.head p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #062033;
+    padding: 0 120px;
+    line-height: 17.75px;
+    padding-top: 39px;
+}
+.work-btn{
+    display: flex;
+    text-align: center;
+    padding-top: 69px;
+    padding-left: 247px;
+}
+.work-btn a{
+    padding: 10px 20px;
+    color: #062033;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: all linear .5s;
+}
+.work-btn a:hover{
+    background-color: #4c76ff;
+    color: #ffffff;
+}
+.gal-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 74px;
+}
+.gal-item{
+    width: 25%;
+    position: relative;
+}
+.gal-image{
+    
+    line-height: 0;
+}
+.gal-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 118, 255,.90);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all linear .5s;
+    display: flex;
+}
+.gal-image:hover .gal-overlay{
+    opacity: 1;
+}
+.gal-info{
+    text-align: center;
+    align-self: center;
+    
+}
+.gal-info h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13.2px;
+    color: #ffffff;
+    padding-top: 16px;
+}
+.gal-info p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.25px;
+    color: #ffffff;
+    padding-top: 16px;
+}
+.gal-icon i{
+    width: 29px;
+    height: 29px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 29px;
+    color: #ffffff;
+}
+/*========================this part have problem================*/
+
+/*===================works css part end here==========================*/
+/*===================team css part goes here==========================*/
+#team{
+    padding-bottom: 100px;
+}
+.team p{
+    padding: 0px 104px;
+    padding-bottom: 50px;
+    padding-top: 46px;
+}
+.team-main{
+    display: flex;
+    justify-content: space-between;
+}
+.team-item{
+    padding-top: 50px;
+    width: 225px;
+}
+.team-img{
+    position: relative;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 118, 255,.95);
+    justify-content: center;
+    transition: all linear .5s;
+    opacity: 0;
+}
+.team-overlay:hover{
+    opacity: 1;
+}
+.team-text{
+    text-align: center;
+}
+.team-text h6{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13.27px;
+    color: #ffffff;
+    margin-top: 13px;
+    padding: 0 13px;
+    padding-bottom: 7px;
+}
+.team-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13.27px;
+    color: #ffffff;
+    line-height: 19.91px;
+    padding: 0 22px;
+    padding-bottom: 63px;
+}
+.team-icon i{
+    background-color: rgba(0, 0, 0,.30);
+    width: 35px;
+    height: 35px;
+    color: #ffffff;
+    line-height: 35px;
+}
+.team-info{
+    text-align: center;
+}
+.team-info h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14.93px;
+    color: #062033;
+    text-transform: capitalize;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    transition: all linear .5s;
+}
+.team-info h3:hover{
+    color: #1db99a;
+}
+.team-info p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.78px;
+    color: #062033;
+    text-transform: capitalize;
+}
+
+/*===================team css part end here==========================*/
+/*===================funfact css part goes here==========================*/
+.funfact-img{
+    position: relative;
+}
+.funfact-overlay{
+    position: absolute;
+    background-color: rgba(6, 32, 51,.80);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.funfact-head{
+    text-align: center;
+}
+.funfact-head h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #4c76ff;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    padding-top: 66px;
+}
+.funfact-head i{
+    color: #c9c9c9;
+    width: 18px;
+    height: 14px;
+
+}
+.funfact-head span{
+    position: relative;
+}
+.funfact-head span::before{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    top: 60%;
+    right: 178%;
+    background: #c9c9c9;
+}
+.funfact-head span::after{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    top: 60%;
+    left: 178%;
+    background: #c9c9c9;
+}
+.funfact-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+.funfact-icon{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #63707c;
+    border-radius: 50%;
+    text-align: center;
+}
+.funfact-icon i{
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 100px;
+}
+.funfact-text h4{
+    padding-top: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 44.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.funfact-text h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13.44px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: -5px;
+}
+
+/*===================funfact css part end here==========================*/
+/*===================discuss css part goes here==========================*/
+.discuss-head{
+    padding-top: 87px;
+}
+.discuss-head{
+    text-align: center;
+}
+.discuss-head h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #4c76ff;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+.discuss-head i{
+    color: #c9c9c9;
+    width: 18px;
+    height: 14px;
+
+}
+.discuss-head span{
+    position: relative;
+}
+.discuss-head span::before{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    top: 60%;
+    right: 178%;
+    background: #c9c9c9;
+}
+.discuss-head span::after{
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 1px;
+    top: 60%;
+    left: 178%;
+    background: #c9c9c9;
+}
+.discuss-head p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #062033;
+    padding: 0 120px;
+    line-height: 17.75px;
+    padding-top: 39px;
+}
+.discuss-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 78px;
+}
+.discuss-left{
+    width: 208px;
+}
+.discuss-left h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18.35px;
+    color: #062033;
+    padding-bottom: 30px;
+}
+.discuss-left p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.84px;
+    color: #6a737b;
+    padding-right: 45px;
+}
+.discuss-mid h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20.02px;
+    color: #062033;
+    padding-bottom: 30px;
+}
+#name{
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    width: 309px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.84px;
+    color: #5b646e;
+    text-transform: capitalize;
+    padding-bottom: 14px;
+    outline: none;
+}
+.discuss-mid textarea{
+    margin-top: 35px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    width: 654px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.84px;
+    color: #5b646e;
+    outline: none;
+}
+#email {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    width: 309px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.84px;
+    color: #5b646e;
+    padding-bottom: 14px;
+    outline: none;
+}
+.discuss-icon{
+    padding-top: 31px;
+    text-align: right;
+}
+.discuss-icon i{
+    font-size: 20px;
+    color: #4c76ff;
+    margin-right: 5px;
+}
+.discuss-icon span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13.35px;
+    color: #000000;
+}
+.discuss-right{
+    width: 30px;
+    padding-top: 16px;
+}
+.discuss-right i{
+    font-size: 22px;
+    color: #cdd2d6;
+    padding-bottom: 13px;
+}
+.map{
+    padding-top: 85px;
+}
+.map iframe{
+    width: 100%;
+    height: 185px;
+    position: relative;
+}
+.map i{
+    position: absolute;
+    font-size: 29px;
+    color: #4c76ff;
+    z-index: 999;
+    left: 43%;
+    padding-top: 100px;
+}
+/*===================discuss css part end here==========================*/
+/*===================footer css part goes here==========================*/
+#footer{
+    background-color: #010305;
+    padding-bottom: 100px;
+}
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left{
+    width: 242px;
+}
+.footer-left h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 26.72px;
+    color: #ffffff;
+    padding-top: 43px;
+}
+.footer-left span{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 26.72px;
+    color: #4a73f9;
+    margin-left: -2px;
+}
+.footer-left p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 12.41px;
+    color: #ffffff;
+    line-height: 22.9px;
+    padding-top: 16px;
+    margin-right: 6px;
+}
+.footer-mid {
+    width: 246px;
+}
+.footer-mid h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 43px;
+    padding-bottom: 58px;
+}
+.footer-mid a{
+    padding: 21.5px 123px;
+    border: 2px solid #ffffff;
+    border-radius: 3px; 
+}
+.footer-mid i{
+    font-size: 16px;
+    color: #676869;
+    text-align: right;
+}
+.footer-mid p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 12.41px;
+    color: #ffffff;
+    line-height: 22.9px;
+    padding-top: 16px;
+    margin-right: 6px;
+    padding-top: 39px;
+}
+.footer-right{
+    width: 246px;
+    
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-right h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 43px;
+    padding-bottom: 32px;
+}
+.footer-text-left p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 11.58px;
+    color: #ffffff;
+    padding-bottom: 12px;
+}
+.footer-text-right p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 11.58px;
+    color: #ffffff;
+    padding-bottom: 12px;
+}
+
+/*===================footer css part end here==========================*/
+/*===================Navbar css part goes here==========================*/
+
+/*===================Navbar css part end here==========================*/
+/*===================Navbar css part goes here==========================*/
+
+/*===================Navbar css part end here==========================*/
+/*===================Navbar css part goes here==========================*/
+
+/*===================Navbar css part end here==========================*/
+/*===================Navbar css part goes here==========================*/
+
+/*===================Navbar css part end here==========================*/
+/*===================Navbar css part goes here==========================*/
+
+/*===================Navbar css part end here==========================*/
